@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body class="bg-rose-500 mt-32 mx-auto max-w-4xl text-white">
+    <header class="mb-28">
+      <img src="./img/logo.svg" alt="logo find a Friend" />
+    </header>
+    <main>
+      <section class="flex justify-between mb-28">
+        <h1 class="font-extrabold text-7xl">
+          Leve <br />
+          a felicidade para o seu lar
+        </h1>
+        <img class="w-96" src="./img/OBJECTS.svg" alt="desenho de cachorros" />
+      </section>
+      <section class="flex justify-between items-center">
+        <p class="font-semibold text-2xl">
+          Encontre o animal de estimação ideal <br />
+          para seu estilo de vida!
+        </p>
+        <div class="flex items-center gap-5">
+          <p>Busque um amigo:</p>
+          <form class="flex gap-3" action="">
+            <select
+              id="state"
+              class="bg-rose-500 border h-16 w-16 rounded-2xl focus-visible:outline-none"
+              name="state"
+            >
+              <option disabled selected value=""></option>
+              <option value="pa">PA</option>
+              <option value="ac">AC</option>
+              <option value="am">AM</option>
+            </select>
+            <select
+              id="city"
+              class="bg-rose-400 border h-16 rounded-2xl p-4 focus-visible:outline-none"
+              name="city"
+            >
+              <option disabled selected value=""></option>
+              <option value="capanema">Capanema</option>
+            </select>
+            <button class="bg-lime-200 rounded-2xl p-4">
+              <img src="./img/magnifying-glass.svg" alt="lupa" />
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
