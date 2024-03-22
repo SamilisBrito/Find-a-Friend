@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/small-logo.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body class="bg-rose-50 relative">
+    <header class="bg-rose-500 p-6 max-w-24 h-screen fixed top-0 flex flex-col justify-between">
+      <img src="../img/small-logo.svg" alt="logo da Find A Friend" />
+      <button class="bg-lime-200 rounded-2xl p-3 ">
+        <img src="../img/back-arrow.svg" alt="lupa" />
+      </button>
+    </header>
+
+    <main class="my-10 mx-auto max-w-4xl text-blue-900 font-semibold">
+      <h2 class="text-slate-400 text-center mb-10">Seu novo amigo</h2>
+      <section class="w-full bg-white rounded-3xl pb-16">
+        <div class="rounded-t-lg w-full h-80 overflow-hidden mb-8">
+          <img
+            class="object-cover w-full h-full"
+            src="../img/Siberian-Husky-standing-outdoors-in-the-winter.webp"
+            alt="Siberian Husky standing outdoors in the winter"
+          />
+        </div>
+        <ul class="flex justify-between flex-wrap mb-16 w-9/12 m-auto">
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/Siberian-Husky-standing-outdoors-in-the-winter.webp"
+              alt="Siberian Husky"
+            />
+          </li>
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/siberian-husky-winter.avif"
+              alt="Siberian Husky"
+            />
+          </li>
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/siberian-husky-winter.avif"
+              alt="Siberian Husky"
+            />
+          </li>
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/siberian-husky-winter.avif"
+              alt="Siberian Husky"
+            />
+          </li>
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/siberian-husky-winter.avif"
+              alt="Siberian Husky"
+            />
+          </li>
+          <li class="w-20 h-20">
+            <img
+              class="w-full h-full object-cover rounded-3xl opacity-45 hover:border-4 hover:border-blue-900 hover:opacity-100"
+              src="../img/siberian-husky-winter.avif"
+              alt="Siberian Husky"
+            />
+          </li>
+        </ul>
+        <section class="w-9/12 m-auto">
+          <h2 class="font-extrabold text-5xl mb-6">Jurinha</h2>
+          <p class="mb-10">
+            Eu sou um lindo doguinho de 3 anos, um jovem bricalhão que adora
+            fazer companhia, uma bagunça mas também ama uma soneca.
+          </p>
+          <section class="flex justify-between mb-16">
+            <div class="p-6 border-2 rounded-3xl">
+              <div id="energy" class="flex mb-4 gap-2">
+                <img src="../img/lightning.svg" alt="icone de raio" />
+                <img src="../img/lightning.svg" alt="icone de raio" />
+                <img src="../img/lightning.svg" alt="icone de raio" />
+                <img src="../img/lightning.svg" alt="icone de raio" />
+                <img src="../img/empty-lightning.svg" alt="icone de raio" />
+              </div>
+              <p>Muita energia</p>
+            </div>
+            <div class="p-6 border-2 rounded-3xl">
+              <img class="mb-4" src="../img/wide.svg" alt="icone de raio" />
+              <p>Ambiente amplo</p>
+            </div>
+            <div class="p-6 border-2 rounded-3xl">
+              <div id="energy" class="flex mb-4 gap-1">
+                <img
+                  class="mb-4"
+                  src="../img/circle1.svg"
+                  alt="icone de raio"
+                />
+                <img
+                  class="mb-4"
+                  src="../img/circle2.svg"
+                  alt="icone de raio"
+                />
+                <img
+                  class="mb-4"
+                  src="../img/circle2.svg"
+                  alt="icone de raio"
+                />
+              </div>
+              <p>Ambiente amplo</p>
+            </div>
+          </section>
+          <section class="mb-14 border-b-2">
+            <div class="bg-blue-900 rounded-3xl mb-10">
+              <div class="max-h-56 overflow-hidden rounded-3xl">
+                <img
+                  class="w-full h-full object-contain"
+                  src="../img/map.svg"
+                  alt="mapa"
+                />
+              </div>
+              <p class="p-5 text-center text-yellow-200">
+                Ver rotas no Google Maps
+              </p>
+            </div>
+          </section>
+          <section class="flex items-start gap-5 border-b-2 mb-14">
+            <img src="../img/orange-logo.svg" alt="logo laranja e branco" />
+            <div>
+              <h3 class="font-bold text-3xl">Seu Cãopanheiro</h3>
+              <p>Rua do meio, 123, Boa viagem, Recife - PE</p>
+              <div
+                class="flex p-3 gap-2 bg-blue-50 rounded-2xl mt-4 justify-center mb-14"
+              >
+                <img src="../img/ri_whatsapp-fill.svg" alt="logo do whatsapp" />
+                <p>81 1234.4567</p>
+              </div>
+            </div>
+          </section>
+          <section id="requirements" class="mb-14 border-b-2">
+            <h3 class="font-bold text-3xl mb-10">Requesitos para adoção</h3>
+            <ul class="grid gap-3 mb-10">
+              <li
+                class="flex gap-4 rounded-lg border border-red-400 py-3 px-10 bg-gradient-to-br from-red-100"
+              >
+                <img src="../img/Alerta.svg" alt="icone de alerta" />
+                <p class="text-red-500 font-semibold text-lg">
+                  Local grande para o animal correr e brincar.
+                </p>
+              </li>
+              <li
+                class="flex gap-4 rounded-lg border border-red-400 py-3 px-10 bg-gradient-to-br from-red-100"
+              >
+                <img src="../img/Alerta.svg" alt="icone de alerta" />
+                <p class="text-red-500 font-semibold text-lg">
+                  Local grande para o animal correr e brincar.
+                </p>
+              </li>
+              <li
+                class="flex gap-4 rounded-lg border border-red-400 py-3 px-10 bg-gradient-to-br from-red-100"
+              >
+                <img src="../img/Alerta.svg" alt="icone de alerta" />
+                <p class="text-red-500 font-semibold text-lg">
+                  Local grande para o animal correr e brincar.
+                </p>
+              </li>
+              <li
+                class="flex gap-4 rounded-lg border border-red-400 py-3 px-10 bg-gradient-to-br from-red-100"
+              >
+                <img src="../img/Alerta.svg" alt="icone de alerta" />
+                <p class="text-red-500 font-semibold text-lg">
+                  Local grande para o animal correr e brincar.
+                </p>
+              </li>
+            </ul>
+          </section>
+          <a class="flex gap-4 justify-center bg-green-400 rounded-3xl p-5" href="http://">
+            <img src="../img/Whatsapp.svg" alt="logo" />
+            <p class="font-extrabold text-lg text-white">Entrar em contato</p>
+          </a>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
