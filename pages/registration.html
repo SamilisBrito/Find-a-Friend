@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/small-logo.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body >
+    <main
+      class="mx-auto max-w-5xl text-blue-900 font-semibold flex gap-28 items-start"
+    >
+      <div
+        class="sticky top-16 bg-rose-500 rounded-3xl grid justify-items-center content-between p-12 max-w-md h-[calc(100vh-8rem)]"
+      >
+        <img class="h-11" src="../img/logo.svg" alt="logo da Find A Friend" />
+        <img src="../img/OBJECTS.svg" alt="ilustrações de seis cachorros" />
+      </div>
+
+      <section>
+        <h2 class="mt-36 mb-20 font-bold text-5xl text-center">
+          Cadastre sua organização
+        </h2>
+        <form action="">
+          <fieldset class="grid mb-8">
+            <label for="nome">Nome do responsável</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Antônio Bandeira"
+            />
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="email">Email</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="nome@email.com"
+            />
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="cep">CEP</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="text"
+              name="cep"
+              id="cep"
+              placeholder="13254-000"
+            />
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="address">Endereço</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="text"
+              name="address"
+              id="address"
+              placeholder="rua do meio"
+            />
+          </fieldset>
+
+          <div class="mb-8">MAPA</div>
+
+          <fieldset class="grid mb-8">
+            <label for="whatsapp">Whatsapp</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="tel"
+              name="whatsapp"
+              id="whatsapp"
+              placeholder="00 91234.5678"
+            />
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="password">Senha</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+            />
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="confirm-password">Confirmar Senha</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="********"
+            />
+          </fieldset>
+
+          <button
+            class="inline-block w-full bg-blue-900 text-white font-extrabold p-4 rounded-xl mb-5"
+            type="button"
+          >
+            Cadastrar
+          </button>
+          <button
+            class="inline-block w-full bg-slate-200 p-4 rounded-xl font-extrabold"
+            type="button"
+          >
+            Já possui conta?
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
