@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/small-logo.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body class="bg-rose-50">
+    <main
+      class="my-8 mx-auto max-w-5xl text-blue-900 font-semibold flex gap-28"
+    >
+      <div
+        class="bg-rose-500 rounded-3xl grid justify-items-center content-between p-12 max-w-md"
+      >
+        <img src="../img/logo.svg" alt="logo da Find A Friend" />
+        <img
+          class=""
+          src="../img/OBJECTS.svg"
+          alt="ilustrações de seis cachorros"
+        />
+      </div>
+
+      <section>
+        <h2 class="mt-16 mb-20 font-bold text-6xl">Boas-vindas!</h2>
+        <form action="">
+          <fieldset class="grid mb-4">
+            <label for="email">Email</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </fieldset>
+          <fieldset class="grid mb-14">
+            <label for="password">Senha</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </fieldset>
+
+          <button
+            class="inline-block w-full bg-blue-900 text-white font-extrabold p-4 rounded-xl mb-5"
+            type="button"
+          >
+            Login
+          </button>
+          <button
+            class="inline-block w-full bg-slate-200 p-4 rounded-xl font-extrabold"
+            type="button"
+          >
+            Cadastrar minha organização
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
