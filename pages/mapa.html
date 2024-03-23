@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/small-logo.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body class="bg-rose-50 flex">
+    <section class="bg-rose-400 text-white h-screen relative flex flex-col">
+      <header class="bg-rose-500 pt-10 pl-14 pr-10 pb-6">
+        <img
+          class="w-10 mb-6"
+          src="../img/small-logo.svg"
+          alt="logo da Find A Friend"
+        />
+        <form class="flex gap-3" action="">
+          <select
+            id="state"
+            class="bg-rose-500 border h-12 w-16 rounded-2xl focus-visible:outline-none"
+            name="state"
+          >
+            <option disabled selected value=""></option>
+            <option value="pa">PA</option>
+            <option value="ac">AC</option>
+            <option value="am">AM</option>
+          </select>
+          <select
+            id="city"
+            class="bg-rose-400 border h-12 rounded-2xl px-4 focus-visible:outline-none"
+            name="city"
+          >
+            <option disabled selected value=""></option>
+            <option value="capanema">Capanema</option>
+          </select>
+          <button class="bg-lime-200 rounded-2xl p-4">
+            <img src="../img/magnifying-glass.svg" alt="lupa" />
+          </button>
+        </form>
+      </header>
+      <div class="pt-8 pl-14 pr-10 bg-rose-400">
+        <h2 class="font-extrabold text-xl mb-7">Jurinha</h2>
+        <form action="">
+          <fieldset class="grid mb-7">
+            <label for="age" class="font-medium text-xs mb-3">Idade</label>
+            <select
+              id="age"
+              class="bg-rose-300/50 p-4 rounded-2xl focus-visible:outline-none font-extrabold"
+              name="age"
+            >
+              <option class="font-extrabold" value="puppy">Filhote</option>
+              <option class="font-extrabold" value="adult">Adulto</option>
+            </select>
+          </fieldset>
+          <fieldset class="grid mb-7">
+            <label for="energy" class="font-medium text-xs mb-3"
+              >Nível de Energia</label
+            >
+            <select
+              id="energy"
+              class="bg-rose-300/50 p-4 rounded-2xl focus-visible:outline-none font-extrabold"
+              name="age"
+            >
+              <option class="font-extrabold" value="level1">1</option>
+              <option class="font-extrabold" value="level2">2</option>
+            </select>
+          </fieldset>
+          <fieldset class="grid mb-7">
+            <label for="size-of-the-animal" class="font-medium text-xs mb-3"
+              >Porte do animal</label
+            >
+            <select
+              id="size-of-the-animal"
+              class="bg-rose-300/50 p-4 rounded-2xl focus-visible:outline-none font-extrabold"
+              name="age"
+            >
+              <option class="font-extrabold" value="little">Pouco</option>
+              <option class="font-extrabold" value="big">Grande</option>
+            </select>
+          </fieldset>
+          <fieldset class="grid mb-7">
+            <label for="level-of-independence" class="font-medium text-xs mb-3"
+              >Nível de independência</label
+            >
+            <select
+              id="level-of-independence"
+              class="bg-rose-300/50 p-4 rounded-2xl focus-visible:outline-none font-extrabold"
+              name="age"
+            >
+              <option class="font-extrabold" value="smal">Pequenino</option>
+              <option class="font-extrabold" value="big">Grande</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <main class="text-blue-900 w-full mt-24 ml-8 mr-28">
+      <div class="w-full flex justify-between items-center">
+        <p class="text-xl">
+          Encontre <span class="font-extrabold">324 amigos</span> na sua cidade
+        </p>
+        <select
+          id="filter"
+          class="bg-rose-100/50 p-4 rounded-2xl focus-visible:outline-none"
+          name="filter"
+        >
+          <option value="animal">Gatos e Cachorros</option>
+        </select>
+      </div>
+
+      <section class="grid grid-cols-3 gap-5">
+
+        <article class="group bg-white rounded-3xl flex flex-col relative p-1 hover:bg-blue-900 ">
+            <div class="h-32 overflow-hidden rounded-3xl">
+                <img class="w-full h-full object-cover" src="../img/orange-dog.jpeg" alt="cachorro">
+            </div>
+            <div class="bg-rose-500 rounded-2xl w-11 h-11 flex justify-center absolute bottom-11 left-28 border-2 border-white group-hover:border-blue-900">
+                <img class="w-4" src="../img/small-logo.svg" alt="logo da Find A Friend">
+            </div>
+            <p class="text-blue-900 font-bold text-lg pb-4 pt-5 text-center group-hover:text-white">Alfredo</p>
+        </article>
+        <article class="group bg-white rounded-3xl flex flex-col relative p-1 hover:bg-blue-900 ">
+            <div class="h-32 overflow-hidden rounded-3xl">
+                <img class="w-full h-full object-cover" src="../img/orange-dog.jpeg" alt="cachorro">
+            </div>
+            <div class="bg-lime-300 rounded-2xl w-11 h-11 flex justify-center absolute bottom-11 left-28 border-2 border-white group-hover:border-blue-900">
+                <img class="w-4" src="../img/small-logo.svg" alt="logo da Find A Friend">
+            </div>
+            <p class="text-blue-900 font-bold text-lg pb-4 pt-5 text-center group-hover:text-white">Alfredo</p>
+        </article>
+
+      </section>
+    </main>
+  </body>
+</html>
