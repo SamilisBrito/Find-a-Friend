@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/small-logo.svg"
+      type="image/x-icon"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Nunito Sans", "ui-sans-serif", "system-ui"],
+          },
+        },
+      };
+    </script>
+    <title>Find A Friend</title>
+  </head>
+  <body class="bg-rose-50 relative">
+    <header
+      class="bg-rose-500 p-6 max-w-24 h-screen fixed top-0 flex flex-col justify-between z-10"
+    >
+      <img src="../img/small-logo.svg" alt="logo da Find A Friend" />
+      <button class="bg-lime-200 rounded-2xl p-3">
+        <img src="../img/back-arrow.svg" alt="lupa" />
+      </button>
+    </header>
+
+    <main class="my-10 mx-auto max-w-4xl text-blue-900 font-semibold">
+      <section
+        class="flex justify-between gap-5 w-full bg-blue-900 rounded-3xl py-8 px-16 text-white mb-8"
+      >
+        <div class="flex items-start gap-5">
+          <img src="../img/orange-logo.svg" alt="logo laranja e branco" />
+          <div>
+            <h3 class="font-bold text-3xl">Seu Cãopanheiro</h3>
+            <p>Rua do meio, 123, Boa viagem, Recife - PE</p>
+          </div>
+        </div>
+        <button class="bg-blue-800 rounded-2xl p-5">
+          <img src="../img/exit.svg" alt="icone de sair" />
+        </button>
+      </section>
+      <section class="w-full bg-white rounded-3xl p-16">
+        <h2 class="font-extrabold text-5xl mb-6">Adicione um pet</h2>
+        <form class="border-t-2">
+          <fieldset class="grid mb-8 mt-10">
+            <label for="name">Email</label>
+            <input
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              type="text"
+              name="name"
+              id="name"
+            />
+          </fieldset>
+          <fieldset class="grid mb-8 mt-10">
+            <label for="about"
+              >Sobre
+              <span class="font-normal text-xs"
+                >Máximo de 300 catacteres</span
+              ></label
+            >
+
+            <textarea
+              id="about"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200 resize-none"
+              type="text"
+              name="about"
+              rows="5"
+            ></textarea>
+          </fieldset>
+          <fieldset class="grid mb-8">
+            <label for="age">Idade</label>
+            <select
+              id="age"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              name="age"
+            >
+              <option class="font-semibold text-lg" value="little">
+                Pouco
+              </option>
+              <option class="font-semibold text-lg" value="big">Grande</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="size">Porte</label>
+            <select
+              id="size"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              name="size"
+            >
+              <option class="font-semibold text-lg" value="little">
+                Pequeno
+              </option>
+              <option class="font-semibold text-lg" value="big">Grande</option>
+            </select>
+          </fieldset>
+          <fieldset class="grid mb-8">
+            <label for="energy">Nível de energia</label>
+            <select
+              id="energy"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              name="energy"
+            >
+              <option class="font-semibold text-lg" value="low">Baixo</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="level-of-independence">Nível de independência</label>
+            <select
+              id="level-of-independence"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              name="level-of-independence"
+            >
+              <option class="font-semibold text-lg" value="low">
+                Baixo (precisa de companhia sempre)
+              </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="environment">Ambiente</label>
+            <select
+              id="environment"
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200"
+              name="environment"
+            >
+              <option class="font-semibold text-lg" value="Large-environment">
+                Ambiente amplo
+              </option>
+            </select>
+          </fieldset>
+
+          <fieldset class="grid mb-8">
+            <label for="photo">Fotos</label>
+            <div
+              class="p-4 rounded-xl focus-visible:outline-blue-900 bg-slate-200/50 border-2 border-slate-200 mb-4 h-36 flex flex-col items-center justify-center relative"
+            >
+              <input
+                id="photo"
+                class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                type="file"
+                name="photo"
+              />
+              <img
+                class="w-6 mb-3"
+                src="../img/add-image.svg"
+                alt="icone de adicionar imagem"
+              />
+              <p>Arraste e solte o arquivo</p>
+            </div>
+            <div
+              class="p-4 rounded-xl focus-visible:outline-blue-900 border-2 border-slate-200 grid"
+            >
+              <img src="../img/file.svg" alt="icone de arquivo" />
+              <p>aqui vai ter o nome da imagem</p>
+              <img src="../img/x-square.png" alt="icone de x" />
+            </div>
+            <!-- <input
+              id="name-the-photo"
+              
+              type="text"
+              name="name-the-photo"
+            /> -->
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
